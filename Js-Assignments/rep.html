@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type = "text" id = "str">
+	<button onclick = "rep()"></button>
+	<script type="text/javascript">
+		function rep(){
+			var s1 = document.getElementById("str").value;
+			var arr = s1.split("");
+			var s2 = "";
+			var count = 1;
+			arr.sort();
+			for(var i = 0; i < arr.length;i = i+count){
+				for(var j = i+1;j < arr.length;j++){
+					if(arr[i] == arr[j]){
+						count++;
+						break;
+					}
+					else{
+						s2 = arr[i];
+					}
+
+				}
+			}
+			console.log(s2);
+			console.log(arr);
+		}
+	</script>
+
+</body>
+</html>

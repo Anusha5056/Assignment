@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<table align = "center">
+			<th>Registrationform</th>
+			<tr>
+			<td>Enter first name:<input type="text" name="fname" id = "fname" placeholder="fname"></td>
+		  	</tr> 
+		  	<tr>
+		  	<td> Enter last name:<input type = "text" name = "lname" id= "lname" placeholder="lname"></td>
+			</tr>
+			<tr>
+			<td>Enter email id:<input type = "text" name = "email" id = "email" placeholder="email"></td>
+			</tr>
+			<tr>
+			<td>Enter city:    <input type = "text" name = "city" id = "city" placeholder="city"></td>
+			</tr>
+			<tr>
+				<td><button type="button" name="submit" onclick = "display()">submit</td>
+			</tr>
+		</table>
+	</form>
+	<p id="reg" align = "center"></p>
+	<script type="text/javascript">
+		function display(){
+			var fname = document.getElementById("fname").value;
+			var lname = document.getElementById("lname").value;
+			var email = document.getElementById("email").value;
+			var city  = document.getElementById("city").value;
+			var arr   = [fname,lname,email,city];
+			for(var i = 0;i <= arr.length;i++){
+				document.getElementById("reg").innerHTML += arr[i] + "<br>";
+				}
+		
+		}
+	</script>
+
+</body>
+</html>

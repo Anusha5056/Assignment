@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type = "text" id = "str">
+	<button onclick="comb()">proceed</button>
+	<script type="text/javascript">
+		function comb(){
+			var s1 = document.getElementById("str").value;
+			var arr = s1.split("");
+			var a1 = "";
+			for(var i = 0;i<arr.length;i++){
+				a1 = a1+arr[i] + ",";
+			}
+			//a1 = a1 + push(arr[0]+arr[1]);
+			//a1 = a1 + push(arr[1]+arr[2]);
+			console.log(a1);
+
+		}
+	</script>
+
+</body>
+</html>

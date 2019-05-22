@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type = "text" id = "str">
+	<button onclick = "rep()">proceed</button>
+	<script type="text/javascript">
+		function rep(){
+			var s1 = document.getElementById("str").value;
+			var arr = s1.split("");
+			arr.sort();
+			var count = 1;
+			for( var i = 0;i < arr.length;i=i+count){
+				count =1;
+				for(var j = i + 1; j < arr.length;j++){
+					if(arr[i] == arr[j]){
+						count++;
+					}
+				}
+				console.log(arr[i] + count);
+			}
+		}
+	</script>
+</body>
+</html>
